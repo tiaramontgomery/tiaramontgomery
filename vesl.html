@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tiara's Portfolio</title>
+    <link rel="stylesheet" href="css/vesl.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/imperial.js" defer></script>
+  </head>
+  <header>
+    <nav class="header">
+      <img src="photos/logo.png" class="header" />
+      <ul class="menu">
+        <li class="choice"><a href="style.html" class="menu-link">Home</a></li>
+        <li class="choice">
+          <a href="styleit.html" class="menu-link">Style It</a>
+        </li>
+        <li class="choice">
+          <a href="howto.html" class="menu-link">How-to</a>
+        </li>
+        <li class="choice">
+          <a href="#contact" class="menu-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="title">
+      <h1>VESL</h1>
+    </div>
+    <div class="overview-grid">
+      <div class="overview-text">
+        <h3>
+          The Virtual Experiences Simulation Lab (VESL) is an interdisciplinary
+          hub where students collaborate on immersive media projects, gaining
+          hands-on experience in areas like game development, XR, and UI/UX
+          design. I joined the VESL in September 2023 to contribute to the data
+          visualization efforts for the 305 360 project. As part of this
+          initiative, I designed innovative 2D mockups representing 3D data
+          visualizations of Miami’s dynamic landscape.
+        </h3>
+      </div>
+      <div class="homescreen1">
+        <img src="photos/vesllogo.png" />
+      </div>
+    </div>
+    <div class="projects">
+      <h1 class="project-title">305 360 Project</h1>
+      <div class="task">
+        <div class="task-text">
+          <h3>
+            305/360° is a cutting-edge VR application designed to familiarize
+            and immerse new doctors and researchers with the service area of the
+            Sylvester Comprehensive Cancer Center in Miami. It gives prospective
+            doctors and researchers insight into Miami's socioeconomic status,
+            culture, and landscape.
+          </h3>
+        </div>
+      </div>
+      <div class="process-grid">
+        <div class="process-card">
+          <h2>Role</h2>
+          <h3>Data Visualization Team</h3>
+          <div class="process-card-list">
+            <ul>
+              <li>Create unique 2D mockups of 3D data visualizations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="process-card">
+          <h2>Goal</h2>
+          <h3>
+            Develop unique, creative, and interactive ideas to visualize Miami’s
+            2D data in a 3D environment
+          </h3>
+        </div>
+        <div class="process-card">
+          <h2>Complications</h2>
+          <h3>
+            The 3D modeler left the project. There was a gap between my team and
+            the developer. I stepped up and learned to create some of the
+            visualizations
+          </h3>
+        </div>
+      </div>
+
+      <div class="introduction-photo">
+        <img src="photos/introduction.jpg" />
+      </div>
+      <div class="center">
+        <div class="interaction-box">
+          <h2>305 360 Introduction</h2>
+          <h3>
+            Upon clicking on the purple data icon, the panel will expand to show
+            additional options to explore the data section of this project.
+            There are 4 categories: demographics, Climate, Social Services,
+            Healthcare. They each have two subcategories for users to explore.
+            All data visualizations have interactivity for user engagement.
+          </h3>
+        </div>
+      </div>
+      <div class="project-subtitle">
+        <h1>Categories</h1>
+      </div>
+      <div class="project-buttons">
+        <button class="project-button" onclick="activateButton(0)">
+          Demographics
+        </button>
+        <button class="project-button" onclick="activateButton(1)">
+          Climate
+        </button>
+        <button class="project-button" onclick="activateButton(2)">
+          Social Services
+        </button>
+        <button class="project-button" onclick="activateButton(3)">
+          Healthcare
+        </button>
+      </div>
+      <div class="content">
+        <div class="content-section" id="section-0">
+          <div class="project-subtitle">
+            <h3>Race and Ethnicity</h3>
+          </div>
+          <div class="photo-grid">
+            <div class="project-photos">
+              <img src="photos/raceandethnicity.jpg" />
+            </div>
+            <div class="project-photos">
+              <img src="photos/raceandethnicity2.jpg" />
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Description</h1>
+          </div>
+          <div class="description-text">
+            <h2>
+              This visualization showcases the racial distribution in Miami-Dade
+              County. My team and I used displacement maps to show where there
+              is a larger population of each race in Miami-Dade.
+            </h2>
+          </div>
+          <div class="photo-grid">
+            <div class="description-box">
+              <h2>User Interaction</h2>
+              <h3>
+                The legend is interactive and users can toggle between the races
+                to see the differences.
+              </h3>
+            </div>
+            <div class="description-box">
+              <h2>Pain Points</h2>
+              <h3>
+                A couple of difficulties I ran into was how far I could extrude
+                the displacement map and the removal of the black background of
+                the image. It was difficult to remove the black background of
+                the image since the image is made up of black and white. We
+                wanted the earth map to still be visible and we achieved this by
+                lower the displacement map below the earth map to hide the black
+                background.
+              </h3>
+            </div>
+          </div>
+          <div class="project-subtitle">
+            <h3>Ancestry</h3>
+          </div>
+          <div class="photo-grid">
+            <div class="project-photos">
+              <img src="photos/ancestry.jpg" />
+            </div>
+            <div class="project-photos">
+              <img src="photos/ancestry2.jpg" />
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Description</h1>
+          </div>
+          <div class="description-text">
+            <h2>
+              This interactive display showcases the diverse ancestry origins of
+              Miami residents. Using a globe as the centerpiece, arrows extend
+              from various countries to Miami, illustrating the city's cultural
+              roots.
+            </h2>
+          </div>
+          <div class="center">
+            <div class="interaction-box">
+              <h2>User Interaction</h2>
+              <h3>
+                Users can explore this visualization in two ways: by hovering
+                over an arrow to view the number of Miami residents connected to
+                a specific country, or by interacting with the legend, where
+                hovering over a country’s flag highlights its corresponding
+                arrow and how many Miami residents are from that country.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="content-section" id="section-1">
+          <div class="project-subtitle">
+            <h3>Urban Tree Canopy</h3>
+          </div>
+          <div class="photo-grid">
+            <div class="project-photos">
+              <img src="photos/urbantree.jpg" />
+            </div>
+            <div class="project-photos">
+              <img src="photos/urbantree2.jpg" />
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Description</h1>
+          </div>
+          <div class="description-text">
+            <h2>
+              This visualization highlights areas in Miami with the densest tree
+              canopy, featuring an option to explore 360° videos of each
+              location. To represent canopy density, I introduced the idea of
+              using height, where taller trees indicate denser canopy.
+            </h2>
+          </div>
+          <div class="center">
+            <div class="interaction-box">
+              <h2>User Interaction</h2>
+              <h3>
+                An interactive legend enhances the experience, allowing users to
+                toggle video pins and explore immersive views of the areas.
+              </h3>
+            </div>
+          </div>
+          <div class="project-subtitle">
+            <h3>Heat</h3>
+          </div>
+          <div class="photo-grid">
+            <div class="project-photos">
+              <img src="photos/heat.jpg" />
+            </div>
+            <div class="project-photos">
+              <img src="photos/heat2.jpg" />
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Description</h1>
+          </div>
+          <div class="description-text">
+            <h2>
+              This visualization highlights the hottest areas in Miami, using a
+              fog-like orange gradient to represent heat intensity.
+            </h2>
+          </div>
+          <div class="center">
+            <div class="interaction-box">
+              <h2>User Interaction</h2>
+              <h3>
+                The interactive legend allows users to toggle video pins and
+                explore immersive views of the areas.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="content-section" id="section-2">
+          <div class="project-subtitle">
+            <h3>Public Transportation</h3>
+          </div>
+          <div class="photo-grid">
+            <div class="project-photos">
+              <img src="photos/transportation.jpg" />
+            </div>
+            <div class="project-photos">
+              <img src="photos/transportation2.jpg" />
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Description</h1>
+          </div>
+          <div class="description-text">
+            <h2>
+              This visualization showcases Miami’s metrorail limited reach and
+              service to their residents. We used an animated gif highlighting
+              the area codes that are accessible to the metrorail compared to
+              the other zip codes that are not.
+            </h2>
+          </div>
+          <div class="photo-grid">
+            <div class="description-box">
+              <h2>User Interaction</h2>
+              <h3>
+                Users are able to interact with the legend to toggle on and off
+                the metro rail tracks for reference.
+              </h3>
+            </div>
+            <div class="description-box">
+              <h2>Pain Points</h2>
+              <h3>
+                This one proved to be difficult to conceptualize. Our first idea
+                was to create a 3D model of Miami's metrorail moving throughout
+                the zipcodes it services to showcase its limited reach of
+                Miami’s population. However, it did not work as intended and we
+                ended up using an animated gif as if the train was moving
+                through the zipcodes.
+              </h3>
+            </div>
+          </div>
+          <div class="project-subtitle">
+            <h3>Social Services</h3>
+          </div>
+          <div class="photo-grid">
+            <div class="project-photos">
+              <img src="photos/socialservices.jpg" />
+            </div>
+            <div class="project-photos">
+              <img src="photos/socialservices2.jpg" />
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Description</h1>
+          </div>
+          <div class="description-text">
+            <h2>
+              This visualization compares Miami’s social service spending for
+              two fiscal years and which categories receive the most funding.
+            </h2>
+          </div>
+          <div class="center">
+            <div class="interaction-box">
+              <h2>User Interaction</h2>
+              <h3>
+                Users can hover each stack to see the exact number spent in that
+                category.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="content-section" id="section-3">
+          <div class="project-subtitle">
+            <h3>Cancer Rates</h3>
+          </div>
+          <div class="photo-grid">
+            <div class="project-photos">
+              <img src="photos/cancerrates.jpg" />
+            </div>
+            <div class="project-photos">
+              <img src="photos/cancerrates2.jpg" />
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Description</h1>
+          </div>
+          <div class="description-text">
+            <h2>
+              This visualization showcases the new cancer rates in Miami for
+              both male and female.
+            </h2>
+          </div>
+          <div class="photo-grid">
+            <div class="description-box">
+              <h2>User Interaction</h2>
+              <h3>
+                Users can interact with the legends to toggle between the
+                different organs and view their new cancer rates percentages.
+              </h3>
+            </div>
+            <div class="description-box">
+              <h2>Pain Points</h2>
+              <h3>
+                This sector was difficult to visualize. My team and I were
+                trying to conceptualize a unique way to visualize this data
+                outside of the traditional 2D models. We were trying to stray
+                away from turning 2D into 3D models replicas. Short on ideas, we
+                first started with a three pie chart but it was less unique and
+                interactive. We also wanted all the visualizations to be
+                different from each other.
+              </h3>
+            </div>
+          </div>
+          <div class="project-subtitle">
+            <h3>Hospital Accessibility</h3>
+          </div>
+          <div class="photo-grid">
+            <div class="project-photos">
+              <img src="photos/hospitals.jpg" />
+            </div>
+            <div class="project-photos">
+              <img src="photos/hospitals2.jpg" />
+            </div>
+          </div>
+          <div class="heading">
+            <h1>Description</h1>
+          </div>
+          <div class="description-text">
+            <h2>
+              This visualization showcases the numbers of hospitals in Miami
+              with ERs and those without. We used height to demonstrate how many
+              beds each hospital have.
+            </h2>
+          </div>
+          <div class="center">
+            <div class="interaction-box">
+              <h2>User Interaction</h2>
+              <h3>
+                Users can hover over each item to view the number of beds.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
