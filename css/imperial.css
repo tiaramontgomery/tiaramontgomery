@@ -122,6 +122,9 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 50px;
+  align-items: center;
+  justify-content: center; 
+  
 }
 
 .overview-grid img {
@@ -145,7 +148,9 @@ a {
   text-align: center;
 }
 .homescreen1 {
-  text-align: center;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .overview-grid {
