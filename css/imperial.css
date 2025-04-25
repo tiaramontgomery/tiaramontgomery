@@ -7,6 +7,7 @@
 
 body {
   background-color: #e8ded1;
+  margin: 50px;
 }
 
 li {
@@ -106,7 +107,6 @@ a {
   text-align: center;
   font-size: 60px;
   color: #5c3d2e;
-  font-family: "Great Vibes", cursive;
 }
 .title h1 {
   font-size: 60px;
@@ -117,14 +117,85 @@ a {
     font-size: 35px;
   }
 }
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+ 
+}
+
+
+.case-study-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-study-card {
+  display: flex;
+  max-width: 1000px;
+  /* background-color: #f5ebdf; */
+  border: 1px solid #a38772;
+  border-radius: 12px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.case-study-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo2 {
+  max-width: 250px;
+  height: auto;
+}
+
+.case-study-right {
+  flex: 2ƒ;
+}
+
+
+
+.title2 {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: #5e3e34;
+}
+
+.sub-info {
+  font-size: 0.95rem;
+  color: #6e5545;
+  margin-bottom: 1.5rem;
+}
+
+.section-header {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #5e3e34;
+  border-bottom: 2px solid #a38772; /* soft brown */
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+
+.overview-text2 {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #5e3e34;
+}
 
 .overview-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 50px;
-  align-items: center;
-  justify-content: center; 
-  
 }
 
 .overview-grid img {
@@ -133,11 +204,13 @@ a {
 }
 
 .overview-text {
+  background-color: #f5ebdf;
   background-color: rgb(132, 109, 98, 0.5);
   box-shadow: 15px 15px #846d62;
   color: white;
+  color: #5e3e34;
   width: 70%;
-  height: 50%;
+  height: 40%;
   padding: 40px;
   margin-top: 150px;
   font-size: 20px;
@@ -148,9 +221,7 @@ a {
   text-align: center;
 }
 .homescreen1 {
-  display: flex;
-  align-items: center; 
-  justify-content: center;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .overview-grid {
@@ -180,11 +251,12 @@ a {
 
 .project {
   text-align: center;
+  
 }
 
 h1 {
-  margin-bottom: 20px;
-  font-size: 32px;
+  margin-bottom: 10px;
+  font-size: 30px;
   color: #5e3e34;
 }
 
@@ -252,8 +324,9 @@ h1 {
 }
 
 .task-text {
-  background-color: #846d62;
-  box-shadow: 15px 15px rgb(132, 109, 98, 0.5);
+  /* background-color: #846d62; */
+  background-color: rgb(132, 109, 98, 0.5);
+  box-shadow: 15px 15px #846d62;
   color: white;
   width: 40%;
   padding: 20px;
@@ -277,12 +350,15 @@ h3 {
   margin-left: 5%;
   margin-top: 50px;
   color: #5c3d2e;
-  text-decoration: underline;
+  border-bottom: 2px solid #a38772; /* soft brown */
+  display: inline-block;
+  /* padding-bottom: 0.3rem; */
 }
 .process-text {
   color: #5c3d2e;
-  margin-left: 70px;
+  margin-left: 80px;
   font-size: 25px;
+  margin-top: 25px;
 }
 .process-grid {
   display: grid;
@@ -345,13 +421,19 @@ h3 {
 }
 .evaluators-box {
   margin-top: 30px;
-  background-color: #846d62;
+  /* background-color: #846d62; */
+  background-color: #f5ebdf;
   width: 60%;
-  border-radius: 20px;
-  border-style: solid;
-  border-width: 4px;
-  border-color: #5c3d2e;
+  /* border-radius: 20px; */
+  /* border-style: solid; */
+  /* border-width: 4px; */
+  /* border-color: #5c3d2e; */
   margin-bottom: 40px;
+  border: 1px solid #a38772;
+  border-radius: 12px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.1);
+  color: #5c3d2e;
+ 
 }
 .evaluators-grid {
   display: grid;
@@ -363,7 +445,7 @@ h3 {
 }
 .evaluators-list li {
   list-style-type: circle;
-  color: white;
+  color: #5c3d2e;
   font-size: 20px;
   padding: 10px;
 }
@@ -404,9 +486,13 @@ h3 {
 .loyalty-results-box li {
   font-size: 25px;
   color: white;
-  list-style-type: circle;
+  list-style-type: disc;
   padding: 10px;
-  font-weight: bold;
+  
+}
+
+#overall-text{
+width:80%;
 }
 @media (max-width: 768px) {
   .loyalty-results-box {
@@ -419,8 +505,7 @@ h3 {
   align-items: center;
 }
 .loyalty-takeways-text {
-  background-color: #846d62;
-  box-shadow: 15px 15px rgb(132, 109, 98, 0.5);
+  
   color: white;
   width: 60%;
   padding: 20px;
@@ -434,11 +519,13 @@ h3 {
 .loyalty-takeways-text li {
   font-size: 25px;
   color: white;
-  list-style-type: circle;
+  list-style-type: disc;
   padding: 10px;
-  font-weight: bold;
+  color: #5c3d2e;
+  
 }
-.task-text h3 {
+
+.task-text p {
   color: white;
   display: flex;
   justify-content: center;
@@ -485,11 +572,12 @@ h3 {
   margin: 20px;
   font-size: 30px;
 }
-.meetings-card h3 {
+.meetings-card p {
   margin-left: 20px;
   margin-right: 20px;
   font-size: 20px;
   margin-bottom: 5px;
+  color: white;
 }
 .meetings-card h4 {
   margin-top: auto; /* Pushes the h4 to the bottom */
@@ -521,11 +609,11 @@ h3 {
 }
 .insight-results-box {
   margin-top: 50px;
-  background-color: #5c3d2e;
+  /* background-color: #5c3d2e;
   width: 60%;
   border-radius: 20px;
   border-style: solid;
-  border-width: 4px;
+  border-width: 4px; */
   /* border-color: rgb(132, 109, 98, 0.5) ; */
   margin-bottom: 40px;
   padding: 30px;
