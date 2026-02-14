@@ -117,6 +117,80 @@ a {
     font-size: 35px;
   }
 }
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+ 
+}
+
+
+.case-study-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-study-card {
+  display: flex;
+  max-width: 1000px;
+  /* background-color: #f5ebdf; */
+  border: 1px solid #a38772;
+  border-radius: 12px;
+  box-shadow: 4px 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.case-study-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo2 {
+  max-width: 250px;
+  height: auto;
+}
+
+.case-study-right {
+  flex: 2ƒ;
+}
+
+
+
+.title2 {
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: #5e3e34;
+}
+
+.sub-info {
+  font-size: 0.95rem;
+  color: #6e5545;
+  margin-bottom: 1.5rem;
+}
+
+.section-header {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: #5e3e34;
+  border-bottom: 2px solid #a38772; /* soft brown */
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+
+.overview-text2 {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #5e3e34;
+}
 
 .overview-grid {
   display: grid;
